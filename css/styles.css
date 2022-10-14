@@ -45,7 +45,7 @@ p {
 }
 
 .logo {
-    margin: .5rem;
+    margin: .8rem 1rem .8rem 1rem;
 }
 
 .logo img {
@@ -56,6 +56,7 @@ p {
     display: none;
     width: 100%;
     padding: 10px;
+    margin-right: calc(1rem - 10px);
 }
 
 .nav-links ul{
@@ -480,6 +481,7 @@ iframe {
 #testimony {
     background-color: #ededed;
     padding: 2em 0 .5em 0;
+    -webkit-padding-start: 2em 0 .5em 0;
 }
 
 #testimony .col-1 {
@@ -511,7 +513,6 @@ iframe {
 }
 
 p.testimony-content {
-    color: var(--secondary-color);
     line-height: 1.5rem;
 }
 
@@ -522,6 +523,10 @@ p.testimony-content {
 .testimony-text p.uppercase  {
     margin-top: 1.5em;
     text-transform: uppercase;
+}
+
+.testimony-text .uppercase, .testimony-text .role {
+    color: var(--secondary-color);
 }
 
 .testimony-text p.role, .user-statistics h4, .user-statistics p {
@@ -659,8 +664,8 @@ p.testimony-content {
 }
 
 .pricing-card .number {
-    margin: 2em 0;
-    font-size: 32pt;
+    margin: 1em 0;
+    font-size: 56pt;
 }
 
 .pricing-card.recom {
@@ -742,6 +747,15 @@ footer img {
     gap: 2em;
 }
 
+.sec-menu p.bold, .follow-us {
+    margin-bottom: 8px;
+    font-size: 16pt;
+}
+
+.sec-menu p.bold {
+    color: var(--fourth-color);
+}
+
 .sec-menu a, .social-media a {
     color: #fff;
     text-decoration: none;
@@ -753,6 +767,7 @@ footer img {
 
 .sec-menu li {
     list-style: none;
+    margin: 0 0 6px 0;
 }
 
 .sec-menu-about, .sec-menu-support{
@@ -830,6 +845,11 @@ footer img {
         flex-direction: row;
         justify-content: space-around;
         gap: 2em;
+    }
+
+    #lanquill_features h2 {
+        margin-bottom: 10px;
+        -webkit-margin-bottom-collapse: 10px;
     }
 
     .image-about {
@@ -982,8 +1002,8 @@ footer img {
     }
 
     .col-2 h4 {
-        margin-top: 1.5em;
         max-width: 80%;
+        margin-top: 1.5em;
     }
 
     .statistic i, .number {
@@ -1008,6 +1028,7 @@ footer img {
 
     .company-address {
         width: 50%;
+        margin: 0 1.5em 0 0;
     }
 
     .company-contacts {
